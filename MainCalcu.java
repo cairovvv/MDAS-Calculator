@@ -38,7 +38,12 @@ public class MainCalcu {
                     result = num1 + num2;
                     System.out.println("Result: " + result);
                     break;
+
+                case 2: // Subtraction
+                    result = num1 - num2;
+                    System.out.println("Result: " + result);
+                    break;
+            }
         }
     }
-}
 }
