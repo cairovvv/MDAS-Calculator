@@ -19,13 +19,16 @@ public class MainCalcu {
             System.out.print("Pick a number: ");
             choice = scan.nextInt();
 
-            if (choice == 5) {
+            if (choice >= 5) {
                 continueCalc = false;
                 System.out.println("\n !! Thank you for using the calculator !!\n");
                 break;
-
             }
-
+            if (choice < 1 || choice > 4) {
+                System.out.println("Invalid choice. Please try again!\n");
+                continue;
+            }
+            
             System.out.print("Enter your first number: ");
             double num1 = scan.nextDouble();
 
